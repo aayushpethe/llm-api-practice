@@ -51,7 +51,6 @@ if st.button("Generate Response"):
             st.subheader("Generated Image")
             st.image(image)
 
-
     elif provider == "OpenAI":
 
         api_key = os.getenv("OPENAI_API_KEY")
@@ -78,7 +77,6 @@ if st.button("Generate Response"):
             st.subheader("Response")
             st.write(response.choices[0].message.content)
 
-
     elif provider == "Groq":
 
         api_key = os.getenv("GROQ_API_KEY")
@@ -104,7 +102,3 @@ if st.button("Generate Response"):
 
             st.subheader("Response")
             st.write(response.choices[0].message.content)
-                )
-
-                st.subheader("Response")
-                st.write(response.choices[0].message.content)
